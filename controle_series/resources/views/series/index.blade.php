@@ -1,4 +1,4 @@
-<x-layout title="Séries">
+<x-layout title="Series">
     <a href="/series/criar">Adicionar</a>
 
     <ul>
