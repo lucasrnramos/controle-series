@@ -13,14 +13,9 @@ class SeriesController extends Controller
           "The Last Of Us",
           "Black Mirror"
         ];
+        //A função view o nome do arquivo que está em resource/views, como segundo parâmetro recebe um array onde a chave será o nome da variável que será passada para a view.
 
-        $html = '<ul>';
-
-        foreach ($series as $serie) {
-            $html .= "<li>$serie</li>";
-        }
-        $html .= '</ul>';
-
-        return $html;
+        //A função compact retorna um array com a string do argumento como chave e identificação da variável de mesmo nome como valor, ou seja, ['series' => $series]
+        return view('listarSeries', compact('series'));
     }
 }
